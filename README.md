@@ -1,13 +1,15 @@
-# Mathias’s dotfiles
+# Rob's Dotfiles
+
+This is just a fork of mathiasbynens dotfiles located here: https://github.com/mathiasbynens/dotfiles.  I've updated some of the files more to my liking and manage this fork, but really I'm just using Mathias' repo for the most part.
 
 ## Installation
 
 ### Using Git and the bootstrap script
 
-You can clone the repository wherever you want. (I like to keep it in `~/Projects/dotfiles`, with `~/dotfiles` as a symlink.) The bootstrapper script will pull in the latest version and copy the files to your home folder.
+You can clone the repository wherever you want. (I like to keep it in `~/dotfiles`) The bootstrapper script will pull in the latest version and copy the files to your home folder.
 
 ```bash
-git clone https://github.com/mathiasbynens/dotfiles.git && cd dotfiles && source bootstrap.sh
+git clone https://github.com/houndstoothstl/dotfiles.git && cd dotfiles && source bootstrap.sh
 ```
 
 To update, `cd` into your local `dotfiles` repository and then:
@@ -27,14 +29,14 @@ set -- -f; source bootstrap.sh
 To install these dotfiles without Git:
 
 ```bash
-cd; curl -#L https://github.com/mathiasbynens/dotfiles/tarball/master | tar -xzv --strip-components 1 --exclude={README.md,bootstrap.sh}
+cd; curl -#L https://github.com/houndstoothstl/dotfiles/tarball/master | tar -xzv --strip-components 1 --exclude={README.md,bootstrap.sh}
 ```
 
 To update later on, just run that command again.
 
 ### Specify the `$PATH`
 
-If `~/.path` exists, it will be sourced along with the other files, before any feature testing (such as [detecting which version of `ls` is being used](https://github.com/mathiasbynens/dotfiles/blob/aff769fd75225d8f2e481185a71d5e05b76002dc/.aliases#L21-26)) takes place.
+If `~/.path` exists, it will be sourced along with the other files, before any feature testing (such as [detecting which version of `ls` is being used](https://github.com/houndstoothstl/dotfiles/blob/aff769fd75225d8f2e481185a71d5e05b76002dc/.aliases#L21-26)) takes place.
 
 Here’s an example `~/.path` file that adds `~/utils` to the `$PATH`:
 
@@ -83,7 +85,7 @@ When setting up a new Mac, you may want to install some common Homebrew formulae
 ## Feedback
 
 Suggestions/improvements
-[welcome](https://github.com/mathiasbynens/dotfiles/issues)!
+[welcome](https://github.com/houndstoothstl/dotfiles/issues)!
 
 ## Thanks to…
 
